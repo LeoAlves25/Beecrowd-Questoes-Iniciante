@@ -22,12 +22,10 @@ while(N!==0){
                 M[i][j]=N-j+1;
             }
 
-            if(M[i][j]>9 && j!=1){
+            if(M[i][j]>9 || j==1){
                 text+="  "+M[i][j];
             }else if(M[i][j]<=9 && j!=1){
                 text+="   "+M[i][j];
-            }else if(j==1){
-                text+="  "+M[i][j];
             }
         }
         if(i==N){
